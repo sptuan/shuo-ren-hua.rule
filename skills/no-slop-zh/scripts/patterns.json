@@ -1,0 +1,121 @@
+[
+  {
+    "id": "steady_catch",
+    "category": "faux_empathy",
+    "severity": "hard",
+    "regex": "稳稳(?:地)?接住你",
+    "advice": "删除整句，直接说明问题或结论。"
+  },
+  {
+    "id": "dont_force_it",
+    "category": "faux_empathy",
+    "severity": "hard",
+    "regex": "不用硬撑|不用向我解释",
+    "advice": "去掉安抚腔，改成事实型回应。"
+  },
+  {
+    "id": "no_hide_no_escape",
+    "category": "faux_empathy",
+    "severity": "hard",
+    "regex": "不躲[^。！？\\n]{0,12}不藏[^。！？\\n]{0,12}不绕[^。！？\\n]{0,12}不逃",
+    "advice": "整段删除，属于高识别度伪安抚模板。"
+  },
+  {
+    "id": "if_you_want",
+    "category": "invitation_tail",
+    "severity": "hard",
+    "regex": "如果你(?:愿意|要|想)|如需我可以|如果还需要|要不要我|你只要告诉我",
+    "advice": "把邀约式尾句改成结果型收尾。"
+  },
+  {
+    "id": "user_flattery",
+    "category": "user_validation",
+    "severity": "hard",
+    "regex": "你问到了问题的核心|你太清醒了|你这个观察很敏锐",
+    "advice": "删掉夸张托举用户的句子，直接回应观点。"
+  },
+  {
+    "id": "too_right",
+    "category": "user_validation",
+    "severity": "hard",
+    "regex": "不是因为你错了[^。！？\\n]{0,24}你太对了",
+    "advice": "这是典型表演式共情，直接改成客观判断。"
+  },
+  {
+    "id": "empty_question_praise",
+    "category": "user_validation",
+    "severity": "hard",
+    "regex": "(?:你的|你这个)?问题(?:很|非常)?(?:关键|明确|好|到位)|这个问题问得好|你的方向是对的|你的思路(?:完全)?正确",
+    "advice": "信息量为零的问题评价。删掉，直接回答。"
+  },
+  {
+    "id": "no_guessing",
+    "category": "process_narration",
+    "severity": "hard",
+    "regex": "我不(?:瞎)?猜|不靠猜|不瞎猜",
+    "advice": "GPT-5.x 签名口癖，直接删掉。用户知道你在推理。"
+  },
+  {
+    "id": "not_x_but_y",
+    "category": "contrast_template",
+    "severity": "soft",
+    "regex": "(?:这)?不是[^。！？\\n]{1,24}而是[^。！？\\n]{1,24}",
+    "advice": "改成正向陈述。把'不是 X'删掉试试，如果 Y 仍然成立，'不是 X'就是废话。"
+  },
+  {
+    "id": "not_only_but_also",
+    "category": "contrast_template",
+    "severity": "soft",
+    "regex": "不只是[^。！？\\n]{1,24}更是[^。！？\\n]{1,24}",
+    "advice": "不要升华。要么说 X，要么说 Y，别叠。"
+  },
+  {
+    "id": "i_first_then",
+    "category": "process_narration",
+    "severity": "soft",
+    "regex": "我先[^。！？\\n]{0,24}(?:再|然后)|再顺手",
+    "advice": "删掉主持腔，直接给动作或结论。"
+  },
+  {
+    "id": "one_line_summary",
+    "category": "process_narration",
+    "severity": "soft",
+    "regex": "一句话总结|不绕|逐步说清楚|最终优化版本",
+    "advice": "少说自己要怎么回答，直接回答。"
+  },
+  {
+    "id": "announce_plain_speak",
+    "category": "process_narration",
+    "severity": "soft",
+    "regex": "说人话就是|简单的说|说穿了?|不踩坑地",
+    "advice": "直接说内容。宣布'我要说人话了'本身就不是人话。"
+  },
+  {
+    "id": "violent_metaphor",
+    "category": "violent_metaphor",
+    "severity": "soft",
+    "regex": "砍一刀|补一刀|切一刀|狠一点|狠狠干|更狠|打坏|拍脑门",
+    "advice": "正常人不会每个技术问题都要砍一刀。用'去掉''简化''删掉'。"
+  },
+  {
+    "id": "pseudo_diagnosis",
+    "category": "blackwords",
+    "severity": "soft",
+    "regex": "痛点|根因",
+    "advice": "用具体描述替代。痛点→哪个功能卡住了。根因→实际原因是什么。"
+  },
+  {
+    "id": "blackwords",
+    "category": "blackwords",
+    "severity": "soft",
+    "regex": "对齐|抓手|收口|落盘|闭环|底层逻辑|赋能|兜底|口径|这轮",
+    "advice": "检查是否能替换成具体对象、动作、边界或文件。"
+  },
+  {
+    "id": "host_tone",
+    "category": "host_tone",
+    "severity": "soft",
+    "regex": "值得注意的是|更重要的是|可以看出|归根结底|真正值得关注的是",
+    "advice": "先删再看信息是否受损；无损就不保留。"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '说人话模式已激活。别接住我，别如果你愿意，别不是而是，别黑话扎堆。开头回答问题，结尾落在结果。'",
+            "timeout": 5,
+            "statusMessage": "Loading shuo-ren-hua.rule"
+          }
+        ]
+      }
+    ]
+  }
+}

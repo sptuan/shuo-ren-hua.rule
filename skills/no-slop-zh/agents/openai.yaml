@@ -1,0 +1,4 @@
+interface:
+  display_name: "说人话"
+  short_description: "中文输出去 AI 腔，像个正常人说话。"
+  default_prompt: "Use $no-slop-zh to rewrite this Chinese response — remove GPT/Claude口癖, write like a human."
