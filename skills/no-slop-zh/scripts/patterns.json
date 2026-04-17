@@ -45,8 +45,8 @@
     "id": "empty_question_praise",
     "category": "user_validation",
     "severity": "hard",
-    "regex": "(?:你的|你这个)?问题(?:很|非常)?(?:关键|明确|好|到位)|这个问题问得好|你的方向是对的|你的思路(?:完全)?正确",
-    "advice": "信息量为零的问题评价。删掉，直接回答。"
+    "regex": "(?:你的|你这个)?问题(?:很|非常)?(?:关键|明确|好|到位)|这个问题问得好|你的方向是对的|你的思路(?:完全)?正确|原因很直接|目的很明确",
+    "advice": "信息量为零的空洞判断。删掉，直接说原因或目的是什么。"
   },
   {
     "id": "no_guessing",
@@ -58,16 +58,16 @@
   {
     "id": "not_x_but_y",
     "category": "contrast_template",
-    "severity": "soft",
+    "severity": "hard",
     "regex": "(?:这)?不是[^。！？\\n]{1,24}而是[^。！？\\n]{1,24}",
-    "advice": "改成正向陈述。把'不是 X'删掉试试，如果 Y 仍然成立，'不是 X'就是废话。"
+    "advice": "禁止先破后立。直接说 Y，不要先否定 X。"
   },
   {
     "id": "not_only_but_also",
     "category": "contrast_template",
-    "severity": "soft",
+    "severity": "hard",
     "regex": "不只是[^。！？\\n]{1,24}更是[^。！？\\n]{1,24}",
-    "advice": "不要升华。要么说 X，要么说 Y，别叠。"
+    "advice": "禁止先破后立。要么说 X，要么说 Y，不要叠。"
   },
   {
     "id": "i_first_then",
