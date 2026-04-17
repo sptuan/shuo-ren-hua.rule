@@ -190,13 +190,6 @@ shuo-ren-hua.rule/
         └── scripts/
 ```
 
-
-## 模型版本记录
-
-- `GPT-5.4`：2026-03-05 发布。来源：[OpenAI](https://openai.com/index/introducing-gpt-5-4/)
-- `Claude Opus 4.6`：2026-02-05 发布。来源：[Anthropic](https://www.anthropic.com/news/claude-opus-4-6?id=ClaudeOpus4.6)
-- 截至 2026-04-17，没找到 `Claude Opus 4.7` 的公开发布信息。
-
 ## 边界
 
 - 管风格，不管事实。别指望这个帮你查 bug
