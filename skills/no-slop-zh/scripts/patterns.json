@@ -59,15 +59,29 @@
     "id": "not_x_but_y",
     "category": "contrast_template",
     "severity": "hard",
-    "regex": "(?:这)?不是[^。！？\\n]{1,24}而是[^。！？\\n]{1,24}",
+    "regex": "(?:这|那|并|实际上|真正)?不是[^。！？\\n]{1,40}(?:而是|它是|这是|那是|反而是|恰恰是|真正(?:的)?(?:是|在)|实际上是|更像是)",
     "advice": "禁止先破后立。直接说 Y，不要先否定 X。"
   },
   {
     "id": "not_only_but_also",
     "category": "contrast_template",
     "severity": "hard",
-    "regex": "不只是[^。！？\\n]{1,24}更是[^。！？\\n]{1,24}",
+    "regex": "不(?:只|仅|止)+(?:是|有)?[^。！？\\n]{1,40}(?:而是|更是|还是|也是|更像|甚至是|更有|还有|也有|甚至有)",
     "advice": "禁止先破后立。要么说 X，要么说 Y，不要叠。"
+  },
+  {
+    "id": "not_simple_its",
+    "category": "contrast_template",
+    "severity": "hard",
+    "regex": "不是[^。！？\\n]{1,40}(?:这么|那么)(?:简单|容易|直接)[^。！？\\n]{0,12}(?:它是|这是|而是|是把|是要|是要把)",
+    "advice": "「不是 X 这么简单，它是 Y」是先破后立的常见变体。直接说 Y 的体量。"
+  },
+  {
+    "id": "not_a_but_b_short",
+    "category": "contrast_template",
+    "severity": "hard",
+    "regex": "不(?:在|是为了)[^。！？\\n]{1,30}(?:而在|而是为了)",
+    "advice": "「不在 X 而在 Y」「不是为了 A 而是为了 B」也是先破后立。直接说 Y。"
   },
   {
     "id": "i_first_then",

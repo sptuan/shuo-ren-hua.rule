@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "stop": [
+      {
+        "command": ".cursor/hooks/lint-response.sh",
+        "timeout": 10,
+        "loop_limit": 2
+      }
+    ]
+  }
+}
